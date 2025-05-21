@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menzixpress - Financial & Technology Consulting</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --light-color: #f8f9fa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--light-color);
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .tagline {
+            font-weight: 300;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50%;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-title {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contact-method {
+            margin-bottom: 1rem;
+        }
+        
+        .contact-method strong {
+            color: var(--primary-color);
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Menzixpress</h1>
+            <p class="tagline">Innovative Solutions in Finance & Technology</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div>
+                    <p>Menzixpress is a boutique consulting firm specializing in the intersection of finance and technology. We deliver strategic insights and innovative solutions that drive growth and operational excellence for our clients.</p>
+                    <p>With decades of combined experience in financial services and cutting-edge technology, our team brings a unique perspective to solve your most complex business challenges.</p>
+                </div>
+                <div>
+                    <p>We partner with businesses of all sizes - from startups to Fortune 500 companies - to navigate the rapidly evolving landscape of fintech and digital transformation.</p>
+                    <p>Our approach combines rigorous analysis, industry expertise, and creative problem-solving to deliver tailored solutions that generate sustainable value.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3 class="service-title">Financial Strategy</h3>
+                    <p>Investment analysis, portfolio optimization, risk management, and financial planning tailored to your business objectives.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title">Technology Consulting</h3>
+                    <p>Digital transformation, systems integration, technology stack optimization, and cybersecurity solutions.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title">FinTech Solutions</h3>
+                    <p>Blockchain implementation, payment processing systems, algorithmic trading platforms, and digital banking solutions.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title">Data Analytics</h3>
+                    <p>Business intelligence, predictive modeling, financial forecasting, and data-driven decision support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-method">
+                    <strong>Email:</strong> info@menzixpress.me
+                </div>
+                <div class="contact-method">
+                    <strong>Phone:</strong> +1 (555) 123-4567
+                </div>
+                <div class="contact-method">
+                    <strong>Address:</strong> 123 Financial District, New York, NY 10001
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Menzixpress. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
